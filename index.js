@@ -1,16 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
 const app = express();
-
-
 app.use(bodyParser.json());
 
 
-app.get('/',(req,res)=>{
-    res.write("Hello World");
-    res.end();
-})
 
 let response={
 
@@ -24,17 +17,13 @@ app.get('/bfhl',(req,res)=>{
 
 app.post('/bfhl', (req, res) => {
 
-        const data = req.body.data;
-
-
-        const user_id = "pranav_saluja_2111981140";
-
-
-        const email = "pranav1140.be21@chitkarauniversity.edu.in";
-        const roll_number = "2111981140";
-        const odd_numbers = [];
-        const even_numbers = [];
-        const alphabets = [];
+        let data = req.body.data;
+        let user_id = "satvik_bhardwaj_16082003";
+        let email = "satvik1315.be21@chitkarauniversity.edu.in";
+        let roll_number = "2111981315";
+        let odd_numbers = [];
+        let even_numbers = [];
+        let alphabets = [];
 
 
         data.forEach(element => {
@@ -49,16 +38,15 @@ app.post('/bfhl', (req, res) => {
             }
         });
 
-
-        response = {
-            is_success: true,
-            user_id: user_id,
-            email: email,
-            roll_number: roll_number,
-            odd_numbers: odd_numbers,
-            even_numbers: even_numbers,
-            alphabets: alphabets
-        };
+        response={
+          is_success: true,
+          user_id: user_id,
+          email: email,
+          roll_number: roll_number,
+          odd_numbers: odd_numbers,
+          even_numbers: even_numbers,
+          alphabets: alphabets
+      };
         res.json(response);
 });
 
