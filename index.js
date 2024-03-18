@@ -18,9 +18,9 @@ app.get('/bfhl',(req,res)=>{
 app.post('/bfhl', (req, res) => {
 
         let data = req.body.data;
-        let user_id = "satvik_bhardwaj_16082003";
-        let email = "satvik1315.be21@chitkarauniversity.edu.in";
-        let roll_number = "2111981315";
+        let user_id = "ratandeep_goyal_2111981151";
+        let email = "ratandeep1151.be21@chitkarauniversity.edu.in";
+        let roll_number = "2111981151";
         let odd_numbers = [];
         let even_numbers = [];
         let alphabets = [];
